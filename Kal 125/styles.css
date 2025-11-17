@@ -26,7 +26,7 @@ h1 {
 
 .menu-btn {
     background: none;
-    border: 2px solid red;
+    border: none;
     color: red;
     font-size: 20px;
     width: 35px;
@@ -60,7 +60,7 @@ h1 {
 
 /* CARD WRAPPER */
 .card {
-    background: white;
+    background: rgb(255, 255, 255);
     border: 2px solid #aaa;
     text-decoration: none;
     color: black;
@@ -109,7 +109,7 @@ h1 {
 .card-title {
     text-align: center;
     padding: 8px 0;
-    background: white;
+    background: rgb(255, 255, 255);
     border-top: none;  /* removed border to remove gap */
     font-size: 13px;
 }
@@ -153,4 +153,75 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/* ---------- DARK MODE ---------- */
+body.dark {
+    background: #0d1117;
+    color: white;
+}
+
+body.dark header {
+    background: #161b22;
+    color: white;
+    border-color: #30363d;
+}
+
+body.dark .card {
+    background: #161b22;
+    color: white;
+    border-color: #30363d;
+}
+
+body.dark .card-title {
+    color: white;
+}
+
+body.dark .group-photo {
+    background: #1f2630;
+}
+
+body.dark .card-img {
+    border-color: #30363d;
+}
+
+/* Dark mode button */
+.dark-toggle {
+    position: absolute;
+    right: 25px;
+    top: 32px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;   /* wider for capsule shape */
+    border-radius: 30px;  /* makes the capsule shape */
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Optional: hover styling */
+.dark-toggle:hover {
+    background: #222;
+}
+
+body.dark .card-title {
+    background: #161b22;
+    color: #ffffff;
+}
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between logo and text */
+    margin: 0;
+}
+
+.logo {
+    height: 35px;  /* adjust size */
+    width: auto;
+}
+.group-photo-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px auto; /* center and add bottom margin */
 }
