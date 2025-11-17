@@ -38,21 +38,6 @@ h1 {
 /* GROUP PHOTO — NOW PHOTO-READY      */
 /* ---------------------------------- */
 
-.group-photo {
-    height: 180px;
-    border: 2px solid #ccc;
-    margin: 20px 0;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 20px;
-
-    /* REMOVE grid if photo is added */
-    /* background-image: url("YOUR_IMAGE_HERE.jpg"); */
-}
 
 /* CARD GRID */
 .cards-grid {
@@ -153,24 +138,8 @@ h1 {
         padding-bottom: 20px;
     }
 
-    .group-photo {
-        height: 120px;
-    }
-}
-.group-photo {
-    width: 100%;
-    height: 250px;
-    /* background: #0058ff; fallback color */
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 20px;
 }
 
-.group-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 /* ---------- DARK MODE ---------- */
 body.dark {
     background: #0d1117;
@@ -223,6 +192,31 @@ body.dark .card-img {
     background: #222;
 }
 
+body.dark .hero-section {
+    background: #3b0152;                  /* deep dark background */
+    border-color: #2a2f37;
+    
+    /* darker grid lines */
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+
+    background-size: 25px 25px;           /* same grid size as light mode */
+}
+
+body.dark .hero-text h2 {
+    color: #b8c2ff;                       /* soft light blue */
+}
+
+body.dark .kalvians {
+    color: #4f8bff;                       /* bright saturated highlight */
+}
+
+body.dark .animation-box {
+    background: #161b22;
+    border-color: #3c4453;
+    color: #d0d0d0;
+}
 body.dark .card-title {
     background: #161b22;
     color: #ffffff;
@@ -242,4 +236,108 @@ body.dark .card-title {
     width: 100%;
     max-width: 800px;
     margin: 0 auto 20px auto; /* center and add bottom margin */
+}
+/* HERO SECTION (replacing the old group photo) */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5be2ef;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+
+    /* EVEN GRID BACKGROUND */
+    background-image:
+        linear-gradient(to right, rgba(47, 101, 207, 0.12) 5px, transparent 1px),
+        linear-gradient(to bottom, rgba(47, 101, 207, 0.12) 5px, transparent 1px);
+    background-size: 30px 30px; /* adjust grid spacing */
+
+    /* ensures grid is not stretched */
+    background-repeat: repeat;
+}
+
+
+/* Left Text */
+.hero-text h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #444;
+}
+
+.kalvians {
+    font-size: 55px;
+    font-weight: 900;
+    margin-top: 5px;
+    color: #d01212ac; /* bright exaggerated color */
+    letter-spacing: 2px;
+}
+
+/* Right Animation Box */
+.hero-animation {
+    width: 250px;
+    height: 180px;
+}
+
+.animation-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: 3px dashed #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background: #f4f4f4;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 700px) {
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+   /* HERO SECTION (replacing the old group photo) */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+
+    /* EVEN CLEAN GRID — DESKTOP */
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,0.12) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.12) 1px, transparent 1px);
+    background-size: 25px 25px;  /* perfect squares */
+}
+
+
+    .kalvians {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+}
+@media (max-width: 700px) {
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+
+        /* tighter grid for phones */
+        background-size: 18px 18px;
+    }
+
+    .kalvians {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
 }
