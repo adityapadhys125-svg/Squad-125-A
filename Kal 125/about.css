@@ -1,0 +1,117 @@
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: Arial;
+    background: #EFE9DD;
+    overflow-y: scroll;  /* allows scrolling */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* ========== TOP SECTION ========== */
+.top-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+/* BIGGER PROFILE PICTURE (2× size) */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    background: #ccc;
+    border-radius: 10px;
+    background-image: url("your-photo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* TITLE TEXT */
+.intro-text h2 {
+    font-size: 38px;
+    margin: 0;
+    line-height: 1;
+}
+
+.intro-text h1 {
+    font-size: 52px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* ========== HANDLES ========== */
+.handles {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.handle {
+    padding: 10px 18px;
+    background: white;
+    border: 2px solid #444;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: 0.25s ease;
+}
+
+/* Hover effect */
+.handle:hover {
+    background: black;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* ========== BIG BOXES ========== */
+.big-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #aaa;
+    margin: 25px 0;
+}
+
+.big-box h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.big-box p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+/* Back button styling */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #222;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+/* Dark mode support (if your site uses it) */
+body.dark .back-btn {
+    background: white;
+    color: black;
+}
+
+body.dark .back-btn:hover {
+    background: #ddd;
+}
