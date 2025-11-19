@@ -33,7 +33,12 @@ h1 {
     height: 35px;
     cursor: pointer;
 }
-
+#head {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 35px;
+    color: #e95f5f;
+}
 /* ---------------------------------- */
 /* GROUP PHOTO — NOW PHOTO-READY      */
 /* ---------------------------------- */
@@ -170,6 +175,7 @@ body.dark .card-img {
     border-color: #30363d;
 }
 
+
 /* Dark mode button */
 .dark-toggle {
     margin-right: 2rem;
@@ -241,11 +247,12 @@ body.dark .card-title {
 .hero-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     background: #5be2ef;
     border-radius: 10px;
     padding: 25px;
     margin: 20px 0;
+    height: 575px;
     border: 2px solid #ccc;
 
     /* EVEN GRID BACKGROUND */
@@ -261,13 +268,13 @@ body.dark .card-title {
 
 /* Left Text */
 .hero-text h2 {
-    font-size: 28px;
-    margin: 0;
+    font-size: 70px;
+    margin-top: 155px;
     color: #444;
 }
 
 .kalvians {
-    font-size: 55px;
+    font-size: 100px;
     font-weight: 900;
     margin-top: 5px;
     color: #d01212ac; /* bright exaggerated color */
@@ -276,8 +283,8 @@ body.dark .card-title {
 
 /* Right Animation Box */
 .hero-animation {
-    width: 250px;
-    height: 180px;
+    width: 700px;
+    height: 570px;
 }
 
 .animation-box {
