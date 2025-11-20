@@ -42,6 +42,7 @@ body {
     font-size: 52px;
     margin: 0;
     font-weight: bold;
+    color: crimson;
 }
 
 /* ========== HANDLES ========== */
@@ -64,9 +65,10 @@ body {
 
 /* Hover effect */
 .handle:hover {
-    background: black;
+    background: rgb(12, 65, 255);
     color: white;
     transform: translateY(-4px);
+    box-shadow: 0 5px 2px rgba(13, 13, 13, 0.2);
 }
 
 /* ========== BIG BOXES ========== */
